@@ -1,0 +1,75 @@
+// @import 'bootstrap/scss/bootstrap'
+
+@import 'variables';
+@import 'bootstrap';
+
+//import para utilizar icons bootstrap via cdn
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.theme-background,.item-theme-color{
+    // light-color e dark-color
+    background-color: var(--bg-color);
+}
+
+.theme-container, .card-container{
+    background-color: var(--container-color);
+}
+
+.item-theme-color{
+    border: 1px solid var(--border-theme);
+}
+
+.hr-color{
+    border-color: var(--text-theme);
+}
+
+.item-theme-color::placeholder{
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+.text-theme{
+    color: var(--text-theme);
+}
+
+.button-theme{
+    background-color: $main-color;
+    max-width: 7rem;
+}
+
+.search-icon{
+    border: 1px solid $main-color;
+    color: $main-color;
+    padding: .2rem;
+}
+
+header input{
+    max-width: 15rem;
+}
+
+.card-comentary{
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-comentary img, .card-comentary-peoples img{
+    padding: .5rem;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1; 
+    width: 100%;
+}
+
+.card-comentary-peoples{
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul a{
+    color: $main-color;
+}
+

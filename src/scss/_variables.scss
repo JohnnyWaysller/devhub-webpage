@@ -1,0 +1,53 @@
+$main-color: #36cbf1;
+$dark-bg: #1e2328;
+$light-bg: #e9ecef;
+$dark-container: #2b2e33;
+$light-container: #dee2e6;
+$dark-border:#495057;
+$light-border: #e9ecef;
+// $input-placeholder-color: $dark-color;
+// $input-placeholder-opacity: 1;
+
+
+:root{
+    --bg-color: #{$dark-bg};
+    --container-color: #{$dark-container};
+
+    --border-theme: #{$dark-border};
+    --light-border:#{$light-border};
+    --dark-border: #{$dark-border};
+    --text-theme: #{$light-bg};
+     --placeholder-color: #{$light-border};
+
+    --dark-bg-value: #{$dark-bg};
+    --light-bg-value: #{$light-bg};
+    --dark-container-value: #{$dark-container};
+    --light-container-value: #{$light-container};
+    --dark-placeholder-value: #{$light-border}; 
+    --light-placeholder-value: #{$dark-border}; 
+}
+
+
+
+$item-bg-color: $dark-container;
+
+// Importante: A variável $spacer deve ser definida primeiro.
+$spacer: 1.25rem; 
+
+// --- Configurações de Border-Radius ---
+// Para botões, inputs, etc. (o padrão é .375rem)
+$border-radius: .75rem; 
+// Para deixar os botões com a classe .rounded-pill totalmente redondos
+$border-radius-pill: 50rem; 
+
+// Sobrescrevendo valores específicos de componentes
+$card-border-radius: 1rem;
+$modal-border-radius: 1rem;
+
+// --- Configuração de Sombra ---
+$box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .05);
+
+// --- Configurações de Dropdown ---
+$dropdown-min-width: 16rem;
+// Metade do novo espaçamento padrão ($spacer)
+$dropdown-item-padding-y: $spacer * .5; 
