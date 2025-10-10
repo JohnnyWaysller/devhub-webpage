@@ -32,20 +32,27 @@
     color: var(--text-theme);
 }
 
+
+
 .button-theme{
     background-color: $main-color;
-    max-width: 7rem;
+    
+    // max-width: 8rem;
 }
 
-.search-icon{
-    border: 1px solid $main-color;
-    color: $main-color;
-    padding: .2rem;
+.btn-invisible{
+    color: var(--text-theme); 
+
+    &:hover,
+    &:active,
+    &:focus{
+        // background-color: var(--#{$prefix}body-bg);
+        background-color: rgba($dark-border, .35); 
+        color: var(--text-theme); 
+        
+    }
 }
 
-header input{
-    max-width: 15rem;
-}
 
 .card-comentary{
     width: 4rem;
